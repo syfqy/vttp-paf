@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="POST" action="/order">
+
+        <h1>New Order</h1>
+
+        <table>
+            <tr>
+                <td>Order Date:</td>
+                <td> <input type="date" name="orderDate"></td>
+            </tr>
+            <tr>
+                <td>Customer Name:</td>
+                <td> <input type="text" name="customerName"></td>
+            </tr>
+            <tr>
+                <td>Ship Address:</td>
+                <td> <input type="text" name="shipAddress"></td>
+            </tr>
+            <tr>
+                <td>Notes:</td>
+                <td> <input type="text" name="notes"></td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td> <input type="number" name="tax" min="0" step="any"></td>
+            </tr>
+        </table>
+
+        <h1>Order Details</h1>
+
+        <table>
+            <tr>
+                <td>Product:</td>
+                <td> <input type="text" name="product"></td>
+            </tr>
+            <tr>
+                <td>Unit Price</td>
+                <td> <input type="number" name="unitPrice" min="0" step="any"></td>
+            </tr>
+            <tr>
+                <td>Discount:</td>
+                <td> <input type="number" name="discount" min="0" step="any"></td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td> <input type="number" name="quantity"></td>
+            </tr>
+        </table>
+
+        <button type="submit">Create order</button>
+    </form>
+
+
+</body>
+
+</html>
