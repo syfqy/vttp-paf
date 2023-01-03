@@ -1,0 +1,14 @@
+DROP DATABASE IF EXISTS rsvp;
+
+CREATE DATABASE rsvp;
+
+USE rsvp;
+DROP TABLE rsvp;
+CREATE TABLE rsvp (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(128) NOT NULL,
+    email VARCHAR(128) NOT NULL,
+    phone VARCHAR(32) NOT NULL,
+    confirmation_date DATE NOT NULL,
+    comments VARCHAR(255) NOT NULL
+)
